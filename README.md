@@ -1,3 +1,14 @@
+> [!IMPORTANT]
+> La aplicación aún se encuentra en fase de configuración. No se han implementado funcionalidades específicas y aún contiene archivos por defecto que serán depurados en las siguientes etapas del desarrollo.
+
+
+> [!NOTE]
+> **Próximos pasos:**<br>
+> - Limpieza de archivos y componentes innecesarios
+> - Definición de estructura de carpetas y componentes reutilizables
+> - Desarrollo de interfaces y lógica del frontend
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
