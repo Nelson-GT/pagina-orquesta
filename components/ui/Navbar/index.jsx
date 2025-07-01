@@ -15,11 +15,15 @@ const Navbar = () => {
     ]
 
     useEffect(() => {
-        document.onclick = (e) => {
-            const target = e.target;
-            if (!menuBtnEl.current.contains(target)) setState(false);
-        };
-    }, [])
+  const handleClickOutside = (e) => {
+    if (menuBtnEl.current && !menuBtnEl.current.contains(e.target)) {
+      setState(false);
+    }
+  };
+
+  document.addEventListener('click', handleClickOutside);
+  return () => document.removeEventListener('click', handleClickOutside);
+}, []);
 
     return (
         <header className='relative'>
